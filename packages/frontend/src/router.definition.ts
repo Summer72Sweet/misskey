@@ -26,6 +26,10 @@ export const ROUTE_DEF = [{
 	path: '/',
 	component: $i ? PageTimeline : page(() => import('@/pages/welcome.vue')),
 }, {
+	name: 'index',
+	path: '/registration',
+	component: page(() => import('@/pages/registration.vue')),
+}, {
 	path: '/timeline',
 	component: PageTimeline,
 }, {

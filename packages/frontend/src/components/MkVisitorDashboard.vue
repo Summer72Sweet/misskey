@@ -87,11 +87,11 @@ function signin() {
 }
 
 function signup() {
-	const { dispose } = os.popup(XSignupDialog, {
-		autoSet: true,
-	}, {
-		closed: () => dispose(),
-	});
+	try {
+		misskeyApi('discord/geturi').then((res) => window.location.href = res.uri);
+	} catch (e) {
+		console.log(e);
+	}
 }
 
 function showMenu(ev: MouseEvent) {

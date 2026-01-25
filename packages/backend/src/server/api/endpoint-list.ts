@@ -442,3 +442,6 @@ export * as 'chat/rooms/invitations/outbox' from './endpoints/chat/rooms/invitat
 export * as 'chat/history' from './endpoints/chat/history.js';
 export * as 'chat/read-all' from './endpoints/chat/read-all.js';
 export * as 'v2/admin/emoji/list' from './endpoints/v2/admin/emoji/list.js';
+export * as 'discord/geturi' from './endpoints/discord/geturi.js';
+export * as 'discord/token' from './endpoints/discord/token.js';
+export * as 'discord/check' from './endpoints/discord/check.js';
