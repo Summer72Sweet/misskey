@@ -71,7 +71,7 @@ export default class extends Endpoint<typeof meta, typeof paramDef> { // eslint-
 			for (let i = 0; i < 1; i++) {
 				ticketsPromises.push(this.registrationTicketsRepository.insert({
 					id: this.idService.gen(),
-					expiresAt: null,
+					expiresAt: new Date(Date.now() + 60 * 60 * 1000),
 					code: generateInviteCode(),
 				}).then(x => this.registrationTicketsRepository.findOneByOrFail(x.identifiers[0])));
 			}
